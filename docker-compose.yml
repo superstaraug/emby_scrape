@@ -1,6 +1,6 @@
 version: '2'
 services:
-  emby:
+  emby-normal-scrape:
     image: linuxserver/emby
     container_name: emby_normal_scrape
     environment:
@@ -17,7 +17,7 @@ services:
     ports:
       - 18098:18098
     restart: unless-stopped
-  emby-dmm:
+  emby-vip-scrape:
     image: linuxserver/emby
     container_name: emby_VIP_scrape
     environment:
