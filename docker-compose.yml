@@ -9,7 +9,7 @@ services:
       - TZ=Asia/Shanghai
       - UMASK_SET=022 #optional
     volumes:
-      - ./var_lib_emby:/config
+      - ./var_lib_emby-normalscrape:/config
       - ./transcoding:/transcode
       - /mnt/EmbyMedia_normal_scrape:/mnt/EmbyMedia
     devices:
@@ -26,7 +26,7 @@ services:
       - TZ=Asia/Shanghai
       - UMASK_SET=022 #optional
     volumes:
-      - ./var_lib_emby-dmm:/config
+      - ./var_lib_emby-vipscrape:/config
       - ./transcoding:/transcode
       - /mnt/EmbyMedia_VIP_scrape:/mnt/EmbyMedia
     devices:
